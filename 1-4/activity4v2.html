@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Activity 4 - User Information</title>
+
+    <!-- Internal Stylesheet -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f8f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            background-color: #2e7d32;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .form-container {
+            width: 600px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        label {
+            font-weight: bold;
+            color: #2e7d32;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .button-container {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: #2e7d32;
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #256428;
+        }
+
+        button[type="reset"] {
+            background-color: #e0e0e0;
+            color: #333;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #c6c6c6;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>User Information Form</h1>
+
+    <div class="form-container">
+        <form action="/action_page.php">
+            <table>
+
+                <tr>
+                    <td><label for="fname">First Name:</label></td>
+                    <td><input type="text" id="fname" name="firstname"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="lname">Last Name:</label></td>
+                    <td><input type="text" id="lname" name="lastname"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td><input type="number" id="age" name="age"></td>
+                </tr>
+
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Hobbies:</td>
+                    <td>
+                        <input type="checkbox" id="hobby1" name="hobby[]" value="reading">
+                        <label for="hobby1">Reading</label><br>
+
+                        <input type="checkbox" id="hobby2" name="hobby[]" value="traveling">
+                        <label for="hobby2">Traveling</label><br>
+
+                        <input type="checkbox" id="hobby3" name="hobby[]" value="gaming">
+                        <label for="hobby3">Gaming</label><br>
+
+                        <input type="checkbox" id="hobby4" name="hobby[]" value="cooking">
+                        <label for="hobby4">Cooking</label><br>
+
+                        <input type="checkbox" id="hobby5" name="hobby[]" value="sports">
+                        <label for="hobby5">Sports</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="year-level">Year Level:</label></td>
+                    <td>
+                        <select name="year_level" id="year-level">
+                            <option value="1st-year">1st Year</option>
+                            <option value="2nd-year">2nd Year</option>
+                            <option value="3rd-year">3rd Year</option>
+                            <option value="4th-year">4th Year</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" class="button-container">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Clear</button>
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+
+</body>
+</html>

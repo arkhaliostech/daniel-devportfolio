@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel — Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Pacifico&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <img src="assets/arkh_logo.png" alt="Daniel Logo" class="logo-img">
+                </a>
+            </div>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/arkhaliostech" target="_blank" class="social-icon" aria-label="GitHub">git</a>
+                <a href="https://instagram.com/" target="_blank" class="social-icon" aria-label="Instagram">ig</a>
+                <a href="https://linkedin.com/" target="_blank" class="social-icon" aria-label="LinkedIn">li</a>
+            </div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Side Menu -->
+    <div class="side-menu" id="sideMenu">
+        <div class="side-menu-header">
+            <img src="assets/arkh_logo.png" alt="Daniel Logo" class="side-menu-logo">
+            <button class="close-menu" id="closeMenu" aria-label="Close menu">&times;</button>
+        </div>
+        <div class="side-menu-links">
+            <a href="#about" class="side-link">About</a>
+            <a href="#skills" class="side-link">Skills</a>
+            <a href="#education" class="side-link">Education</a>
+            <a href="#projects" class="side-link">Projects</a>
+            <a href="#contact" class="side-link">Contact</a>
+        </div>
+        <div class="side-menu-social">
+            <a href="https://github.com/arkhaliostech" target="_blank" class="side-social-icon">GitHub</a>
+            <a href="https://instagram.com/" target="_blank" class="side-social-icon">Instagram</a>
+            <a href="https://linkedin.com/" target="_blank" class="side-social-icon">LinkedIn</a>
+        </div>
+    </div>
+
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="subtitle handwritten">Hello There!, I'm</span>
+                    <span class="main-title minecraft">Brent Daniel Lim</span>
+                </h1>
+                <p class="hero-tagline">BSIT-1 Student</p>
+                <p class="hero-subtitle">Design Engineer / App Developer</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-slider">
+            <div class="hero-slide active">
+                <img src="assets/ME.png" alt="Daniel" class="hero-slide-img">
+                <div class="hero-slide-caption">Daniel</div>
+            </div>
+            <div class="hero-slide">
+                <img src="assets/jiroicon.png" alt="Jiro" class="hero-slide-img">
+                <div class="hero-slide-caption">Lim</div>
+            </div>
+            <div class="hero-slide">
+                <img src="assets/Mahito_nobckgrnd.png" alt="Mahito" class="hero-slide-img">
+                <div class="hero-slide-caption">Daniel</div>
+            </div>
+            <div class="hero-slide">
+                <img src="assets/howlicon.png" alt="Howl" class="hero-slide-img">
+                <div class="hero-slide-caption">Lim</div>
+            </div>
+            <div class="hero-slide">
+                <img src="assets/Minecraft Pfp Daniel.png" alt="Minecraft" class="hero-slide-img">
+                <div class="hero-slide-caption">Daniel</div>
+            </div>
+            <div class="slider-nav">
+                <button class="slider-dot active" data-slide="0"></button>
+                <button class="slider-dot" data-slide="1"></button>
+                <button class="slider-dot" data-slide="2"></button>
+                <button class="slider-dot" data-slide="3"></button>
+                <button class="slider-dot" data-slide="4"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-image fade-in-right">
+                <img src="assets/TechMEE.png" alt="howl">
+                <div class="image-overlay">
+                    <span class="overlay-text handwritten">Call me Daniel</span>
+                </div>
+            </div>
+            <div class="about-content fade-in-right">
+                <h2 class="section-title">
+                    <span class="title-accent minecraft">A Thing</span>
+                    <span class="title-main minecraft">About Me</span>
+                </h2>
+                <p class="about-text">
+                    I am a 19 year old, programming student. I'm a passionate designer and developer based in Philippines. I love creating meaningful experiences through design and code.<br><br>
+                    Currently pursuing my studies while working on various design and development projects. Learning new technologies and design principles every day.<br><br>
+                    I work with A.I, learning new information everyday, from automations, design engineering, &amp; making my overall workflow 10x better.<br><br>
+                    Aspiring to become a sustainable technopreneur someday.
+                </p>
+                <p class="about-text"><strong class="highlight">...</strong></p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">1</span>
+                        <span class="stat-label">I Code</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">I Design</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">And I make every pixel count</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================================
+         SKILLS SECTION
+         3 panels with skill bars. To edit:
+           - Change skill name inside <span class="skill-name">
+           - Change the % text inside <span class="skill-pct">
+           - Change bar width in style="--pct: XX%" (keep it matching the % text)
+         To add a skill: copy any <div class="skill-row"> block.
+         To add a panel: copy a <div class="skill-panel"> block.
+    ================================================================ -->
+    <section id="skills" class="menu">
+        <div class="container">
+            <h2 class="section-title centered">
+                <span class="title-accent minecraft">Daniel's</span>
+                <span class="title-main minecraft">Skills</span>
+            </h2>
+
+            <div class="skills-grid">
+
+                <!-- PANEL 1 — Tech Stack-->
+                <div class="skill-panel">
+                    <div class="skill-panel-header">
+                        <span class="skill-panel-icon">⚡</span>
+                        <h3 class="skill-panel-title">Tech Stack</h3>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">HTML &amp; CSS</span>
+                        <span class="skill-pct">85%</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-pct">50%</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct: 70%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">C Programming</span>
+                        <span class="skill-pct">60%</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct: 75%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">M.E.R.N stack (MongoDb, Express, React & React Native, NodeJs)</span>
+                        <span class="skill-pct">30%</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct: 40%"></div></div>
+                    </div>
+                </div>
+
+                <!-- PANEL 2 — Workflow Skills-->
+                <div class="skill-panel">
+                    <div class="skill-panel-header">
+                        <span class="skill-panel-icon">🔄</span>
+                        <h3 class="skill-panel-title">Workflow Skills</h3>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">UI / UX Design</span>
+                        <span class="skill-pct">70%</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">Figma Prototyping</span>
+                        <span class="skill-pct">70%</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct: 78%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">Vibe Coding</span>
+                        <span class="skill-pct">70%</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">Product &amp; Brand Design</span>
+                        <span class="skill-pct">50%</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct: 82%"></div></div>
+                    </div>
+                </div>
+
+                <!-- PANEL 3 — Tools & Apps-->
+                <div class="skill-panel">
+                    <div class="skill-panel-header">
+                        <span class="skill-panel-icon">🛠️</span>
+                        <h3 class="skill-panel-title">Tools &amp; Apps</h3>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">Figma</span>
+                        <span class="skill-pct">70%</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct: 90%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">Photoshop</span>
+                        <span class="skill-pct">60%</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct: 72%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">VS Code / Windsurf</span>
+                        <span class="skill-pct">80%</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct: 88%"></div></div>
+                    </div>
+                    <div class="skill-row">
+                        <span class="skill-name">Claude / AI Tools</span>
+                        <span class="skill-pct">60%</span>
+                        <div class="skill-bar"><div class="skill-fill" style="--pct: 90%"></div></div>
+                    </div>
+                </div>
+
+            </div><!-- end .skills-grid -->
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="locations">
+        <div class="container">
+            <h2 class="section-title centered">
+                <span class="title-accent handwritten">Daniel's</span>
+                <span class="title-main">Educational Background</span>
+            </h2>
+            <div class="locations-content">
+                <div class="location-finder">
+                    <div class="search-box">
+                        <input type="text" placeholder="search universities attended" id="locationSearch">
+                        <button class="btn btn-primary">Search</button>
+                    </div>
+                    <div class="location-list">
+                        <div class="location-card">
+                            <h4>Easter Faith Christian School</h4>
+                            <p>EFCS</p>
+                            <p class="location-hours">Elementary</p>
+                        </div>
+                        <div class="location-card">
+                            <h4>Southern Leyte State University</h4>
+                            <p>SLSU</p>
+                            <p class="location-hours">Junior Highschool</p>
+                        </div>
+                        <div class="location-card">
+                            <h4>Southern Leyte State University</h4>
+                            <p>SLSU</p>
+                            <p class="location-hours">Senior Highschool</p>
+                        </div>
+                        <div class="location-card">
+                            <h4>Cebu Institute of Technology</h4>
+                            <p>CIT-U</p>
+                            <p class="location-hours">College - BSIT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <div id="map" class="map-container">
+                        <img src="assets/jirostudy.jpg" alt="IRRELEVANT TEXT">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title centered">
+                <span class="title-accent minecraft">Daniel's</span>
+                <span class="title-main minecraft">Projects</span>
+            </h2>
+            <div class="proj-grid">
+
+
+                <!-- ── COLUMN 1: PERSONAL PROJECTS -->
+                <div class="proj-column">
+                    <h4 class="proj-col-title">Personal Projects</h4>
+                    <!-- CARD -->
+                    <div class="proj-card" data-desc="I am 19 years old, studying in one of the top technological universities in the country. My first language is C and currently working towards other ones, like reactJS, kotlin and my mastery of html, css, and javascript. I play video games on the side, strategic, team based, and creative. Minecraft, Terraria, Leauge of Legends, Valorant and Apex Legends are some of the games I play.">
+                        <div class="proj-card-header">
+                            <span class="proj-title">My Story</span>
+                            <span class="proj-year">18-19</span>
+                        </div>
+                        <p class="proj-tags">Designer, Developer, Student</p>
+                        <div class="proj-media">
+                            <img src="personalproj-pics/Dan_About.png" alt="My-story">
+                            <div class="proj-overlay">View ↗</div> 
+                        </div>
+                    </div>
+                    
+                    <div class="proj-card" data-desc="A productivity Pomodoro + Focus website. Works on any device. Built with HTML, CSS, and JS.">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Sōzō-sei</span>
+                            <span class="proj-year">19</span>
+                        </div>
+                        <p class="proj-tags">Pomodoro &amp; Focus Website</p>
+                        <div class="proj-media">
+                            <img src="personalproj-pics/sozo-sei.png" alt="Sozo-sei">
+                            <div class="proj-overlay">View ↗</div>
+                        </div>
+                        <a href="https://arkhaliostech.github.io/Pomo-Suchu/" target="_blank" class="proj-link">Visit Site ↗</a>
+                    </div>
+                    <!-- ADD MORE -->
+                </div>
+                <!-- COLUMN 2: DESIGN PROJECTS -->
+                <div class="proj-column">
+                    <h4 class="proj-col-title">Design Projects</h4>
+                    <!-- CARD -->
+                    <div class="proj-card" data-desc="UI/UX prototyping using Figma. Interactive mockups and user flows for web and mobile projects.">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Figma UI Work</span>
+                            <span class="proj-year">2024–25</span>
+                        </div>
+                        <p class="proj-tags">Web · Mobile · Prototyping</p>
+                        <div class="proj-media">
+                            <img src="design-pics/figma-1.png" alt="Figma">
+                            <div class="proj-overlay">View ↗</div>
+                        </div>
+                    </div>
+                    <!-- CARD -->
+                    <div class="proj-card" data-desc="Poster and brand design work in Canva since age 16. Typography, color theory, visual hierarchy.">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Poster &amp; Brand</span>
+                            <span class="proj-year">2021–25</span>
+                        </div>
+                        <p class="proj-tags">Photopea · Typography · Branding</p>
+                        <div class="proj-media">
+                            <img src="design-pics/Poster_Design.png" alt="Poster">
+                            <div class="proj-overlay">View ↗</div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+                <!-- ── COLUMN 3: SCHOOL PROJECTS -->
+                <div class="proj-column">
+                    <h4 class="proj-col-title">School Projects</h4>
+
+                    <!-- PLACEHOLDER CARD -->
+                     <div class="proj-card" data-desc="A Website for A concept business.">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Mr. Gulaman - Activity 6</span>
+                            <span class="proj-year">2026</span>
+                        </div>
+                        <p class="proj-tags">CSIT 201</p>
+                        <div class="proj-media">
+                            <img src="schoolproj-pics/Mr.Gulaman6.png" alt="Project">
+                        </div>
+                        <a href="Activity 6/index.html" target="_blank" class="proj-link">Visit Site ↗</a>
+                    </div>
+
+                    <div class="proj-card" data-desc="Click to">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Activity 1</span>
+                            <span class="proj-year">2026</span>
+                        </div>
+                        <p class="proj-tags">CSIT 201</p>
+                        <div class="proj-media">
+                            <img src="schoolproj-pics/act1.png" alt="Project">
+                        </div>
+                        <a href="1-4/activity1.html" target="_blank" class="proj-link">Visit Site ↗</a>
+                    </div>
+                    <div class="proj-card" data-desc="...">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Activity 2</span>
+                            <span class="proj-year">2025</span>
+                        </div>
+                        <p class="proj-tags">CSIT 201</p>
+                        <div class="proj-media">
+                            <img src="schoolproj-pics/act2.png" alt="Project">
+                        </div>
+                        <a href="1-4/activity2.html" target="_blank" class="proj-link">Visit Site ↗</a>
+                    </div>
+                    <div class="proj-card" data-desc="...">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Actvity 3</span>
+                            <span class="proj-year">2026</span>
+                        </div>
+                        <p class="proj-tags">CSIT 201</p>
+                        <div class="proj-media">
+                            <img src="schoolproj-pics/act3.png" alt="Project">
+                        </div>
+                        <a href="1-4/activity3.html" target="_blank" class="proj-link">Visit Site ↗</a>
+                    </div>
+                    <div class="proj-card" data-desc="...">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Actvity 4</span>
+                            <span class="proj-year">2026</span>
+                        </div>
+                        <p class="proj-tags">CSIT 201</p>
+                        <div class="proj-media">
+                            <img src="schoolproj-pics/act4.png" alt="Project">
+                        </div>
+                        <a href="1-4/activity4v2.html" target="_blank" class="proj-link">Visit Site ↗</a>
+                    </div>
+                    <div class="proj-card" data-desc="...">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Actvity 5</span>
+                            <span class="proj-year">2026</span>
+                        </div>
+                        <p class="proj-tags">CSIT 201</p>
+                        <div class="proj-media">
+                            <img src="schoolproj-pics/PawFinder5.png" alt="Project">
+                        </div>
+                        <a href="Act5/activity5.html" target="_blank" class="proj-link">Visit Site ↗</a>
+                    </div>
+                    <div class="proj-card" data-desc="...">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Actvity 7</span>
+                            <span class="proj-year">2026</span>
+                        </div>
+                        <p class="proj-tags">CSIT 201</p>
+                        <div class="proj-media">
+                            <img src="schoolproj-pics/act7.png" alt="Project">
+                        </div>
+                        <a href="Act7-10/activity7.html" target="_blank" class="proj-link">Visit Site ↗</a>
+                    </div>
+                    <div class="proj-card" data-desc="...">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Actvity 8</span>
+                            <span class="proj-year">2026</span>
+                        </div>
+                        <p class="proj-tags">CSIT 201</p>
+                         <div class="proj-media">
+                             <img src="schoolproj-pics/act8.png" alt="Project">
+                        </div>
+                        <a href="Act7-10/activity8.html" target="_blank" class="proj-link">Visit Site ↗</a>
+                    </div>
+                    <div class="proj-card" data-desc="...">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Actvity 9</span>
+                            <span class="proj-year">2026</span>
+                        </div>
+                        <p class="proj-tags">CSIT 201</p>
+                        <div class="proj-media">
+                             <img src="schoolproj-pics/act9.png" alt="Project">
+                        </div>
+                        <a href="Act7-10/activity9.html" target="_blank" class="proj-link">Visit Site ↗</a>
+                    </div>
+                    <div class="proj-card" data-desc="...">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Actvity 10</span>
+                            <span class="proj-year">2026</span>
+                        </div>
+                        <p class="proj-tags">CSIT 201</p>
+                        <div class="proj-media">
+                             <img src="schoolproj-pics/act10.png" alt="Project">
+                        </div>
+                        <a href="Act7-10/activity10.html" target="_blank" class="proj-link">Visit Site ↗</a>
+                    </div>
+                    <div class="proj-card" data-desc="...">
+                        <div class="proj-card-header">
+                            <span class="proj-title">Actvity 11</span>
+                            <span class="proj-year">2026</span>
+                        </div>
+                        <p class="proj-tags">CSIT 201</p>
+                        <div class="proj-media">
+                             <img src="schoolproj-pics/act11.png" alt="Project">
+                        </div>
+                        <a href="put 11 here" target="_blank" class="proj-link">Visit Site ↗</a>
+                    </div>
+                    
+                </div>
+
+            </div><!-- end .proj-grid -->
+        </div>
+
+        <!-- Project Modal — populated automatically by script.js, no edits needed -->
+        <div class="proj-modal" id="projModal">
+            <button class="proj-modal-close" id="projModalClose">&times;</button>
+            <div class="proj-modal-body" id="projModalBody"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contacts">
+        <div class="container">
+            <h2 class="section-title centered">
+                <span class="title-accent minecraft">Daniel's</span>
+                <span class="title-main minecraft">Contact</span>
+            </h2>
+    <div class="divider"></div>
+    <div class="map-contact-row">
+    <!-- LEFT: Map -->
+    <div class="map-wrapper">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62787.96788846428!2d123.8503848!3d10.3156992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a999258be87b71%3A0x5b8b9e2e1e1e1e1e!2sCebu%20City%2C%20Cebu!5e0!3m2!1sen!2sph!4v1700000000000"
+            width="100%"
+            height="100%"
+            style="border:0; display:block;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+
+    <!-- RIGHT: Inquiry Form -->
+        <div class="inquiry-box">
+            <h2 class="inquiry-title">Let's Build Something Together!</h2>
+
+            <div class="inquiry-row">
+                <input class="inquiry-input" type="text" name="name" placeholder="Your Name">
+                <input class="inquiry-input" type="email" name="email" placeholder="your.email@example.com">
+            </div>
+
+            <textarea class="inquiry-textarea" name="message" placeholder="Your message here..."></textarea>
+            <button class="inquiry-btn">Send Message</button>
+        </div>
+    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/arkh_logo.png" alt="Daniel Logo">
+                    <p class="tagline">Let's build something, and make every pixel count.</p>
+                    <p class="tagline">daniellimatyahoo@gmail.com</p>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-section">
+                        <h4>Links</h4>
+                        <div class="social-buttons" style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.5rem;">
+                            <a href="https://github.com/arkhaliostech" target="_blank" class="social-btn" style="color: var(--neutral-cream);">GitHub</a>
+                            <a href="https://instagram.com/" target="_blank" class="social-btn" style="color: var(--neutral-cream);">Instagram</a>
+                            <a href="https://linkedin.com/" target="_blank" class="social-btn" style="color: var(--neutral-cream);">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Portfolio Stack</h4>
+                        <div class="payment-icons">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span>
+                        </div>
+                        <br>
+                        <p class="tagline handwritten">Last updated: May 05, 2026</p>
+                        <p class="tagline handwritten">1 Corinthians 13:4-8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Daniel. All rights reserved.</p>
+                <p class="credits">Designed &amp; Built by Daniel Lim</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- All JavaScript is in script.js — no inline scripts here -->
+    <script src="script.js"></script>
+</body>
+</html>

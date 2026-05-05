@@ -1,0 +1,459 @@
+/* ===============================
+   stylehome.css  —  Mr. Gulaman
+   =============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #ffffff;
+    color: #1a1a1a;
+    padding: 28px 24px;
+}
+
+.section-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 29px;
+    color: #D81D34;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+    justify-content: center;
+    display: flex;
+}
+
+.divider {
+    width: 100%;
+    max-width: 1840px;
+    height: 4px;
+    background-color: #D81D34;
+    border-radius: 4px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========================
+   PRODUCT TABLE
+   ======================== */
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+.product-table thead {
+    background-color: #D81D34;
+    color: #FFFFFF;
+}
+
+.product-table th {
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.product-table td {
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #f0e8e0;
+    vertical-align: middle;
+}
+
+.product-table tbody tr:nth-child(even) {
+    background-color: #fff3ed;
+}
+
+.product-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.product-table tbody tr:hover {
+    background-color: #ffe0e4;
+}
+
+.product-table .price {
+    font-size: 15px;
+    font-weight: 800;
+    color: #D81D34;
+}
+
+/* ========================
+   PROMO BADGE
+   ======================== */
+.promo-badge {
+    display: inline-block;
+    background-color: #D81D34;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+/* ========================
+   HERO BANNER
+   ======================== */
+.hero {
+    background-color: #D81D34;
+    color: white;
+    border-radius: 12px;
+    padding: 32px 28px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.hero p {
+    font-size: 15px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.hero-emoji {
+    width: 200px;
+    height: 200px;
+    font-size: 48px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* ========================
+   PROMO GRID (home.html)
+   ======================== */
+.promo-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+/* Each promo card: image left, text right */
+.promo-card {
+    display: flex;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.promo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Image wrapper — holds image + badge together */
+.promo-img-wrap {
+    position: relative;
+    width: 140px;
+    flex-shrink: 0;
+}
+
+.promo-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Badge on top of image */
+.promo-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #D81D34;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 4px 10px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Text side of the card */
+.promo-info {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+}
+
+.promo-info h3 {
+    font-size: 15px;
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+.promo-info p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.promo-highlight {
+    font-size: 13px;
+    font-weight: 800;
+    color: #D81D34;
+}
+
+/* ========================
+   FEATURED PRODUCT SPOTLIGHT
+   ======================== */
+.cycle-logo {
+    width: 300px;
+    height: auto;
+    max-height: 300px;
+    border-radius: 12px;
+    animation: bounce 1s ease 0.5s both;
+}
+
+.promo-logo {
+    font-size: 42px;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 90px;
+    line-height: 1;
+    animation: bounce 1s ease 0.5s both;
+}
+
+.spotlight-wrapper {
+    background: white;
+    border-radius: 12px;
+    padding: 24px 20px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    min-height: 100px;
+}
+
+.featured-card {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    animation: fadeIn 0.6s ease;
+}
+
+.featured-card.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.featured-card .product-emoji {
+    font-size: 64px;
+}
+
+.featured-card .product-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+    color: #D81D34;
+}
+
+.featured-card .product-desc {
+    font-size: 13px;
+    color: #666;
+    max-width: 280px;
+    line-height: 1.6;
+}
+
+.featured-card .product-price {
+    font-size: 20px;
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+/* Dot indicators */
+.dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #ddd;
+    transition: background 0.3s ease;
+}
+
+.dot.active {
+    background: #D81D34;
+}
+
+/* ========================
+   ABOUT PAGE
+   ======================== */
+.about-text {
+    text-align: center;
+    font-size: medium;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    line-height: 1.8;
+    color: #444;
+}
+
+.creator-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    margin-bottom: 32px;
+}
+
+.creator-photo {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #D81D34;
+    flex-shrink: 0;
+}
+
+.creator-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.creator-name {
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+    color: #D81D34;
+    margin-bottom: 6px;
+}
+
+.creator-role {
+    font-size: 13px;
+    font-weight: 700;
+    color: #888;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.creator-bio {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Map + Inquiry side by side */
+.map-contact-row {
+    display: flex;
+    gap: 28px;
+    align-items: stretch;
+    margin-bottom: 32px;
+}
+
+.map-wrapper {
+    flex: 1;
+    min-height: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    border: 3px solid #D81D34;
+}
+
+.inquiry-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.inquiry-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+.inquiry-row {
+    display: flex;
+    gap: 12px;
+}
+
+.inquiry-input {
+    flex: 1;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.inquiry-input:focus {
+    border-color: #D81D34;
+}
+
+.inquiry-textarea {
+    width: 100%;
+    height: 120px;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    resize: vertical;
+    outline: none;
+}
+
+.inquiry-textarea:focus {
+    border-color: #D81D34;
+}
+
+.inquiry-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #D81D34;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.inquiry-btn:hover {
+    background-color: #a61527;
+}
+
+/* Mobile: stack promo grid to 1 column */
+@media (max-width: 600px) {
+    .promo-grid {
+        grid-template-columns: 1fr;
+    }
+}

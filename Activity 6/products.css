@@ -1,0 +1,85 @@
+/* ===============================
+   products.css  —  Mr. Gulaman
+   =============================== */
+
+.grid-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 12px;
+    text-align: center;
+}
+
+/* Each product is one self-contained card */
+.product-cell {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    overflow: hidden;
+    vertical-align: top;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.product-cell:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Product image */
+.product-cell img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Red info bar inside each card */
+.info-cell {
+    background-color: #D81D34;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 8px;
+}
+
+.info-cell p {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* Buy button */
+.buy-btn {
+    background-color: white;
+    color: #D81D34;
+    border: none;
+    padding: 6px 18px;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.buy-btn:hover {
+    background-color: #a61527;
+    color: white;
+}
+
+/* ========================
+   MOBILE: stack into 1 column
+   ======================== */
+@media (max-width: 600px) {
+
+    .grid-table,
+    .grid-table tbody,
+    .grid-table tr,
+    .grid-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .product-cell {
+        margin-bottom: 16px;
+    }
+}
